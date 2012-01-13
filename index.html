@@ -1,0 +1,16 @@
+---
+layout: layout
+title: Super Robot Karate School
+---
+
+<div class="content">
+  <div class="related">
+    <ul>
+      {% for post in site.posts %}
+      <li>
+	<div class="date">{{ post.date | date: "%Y |<br/>%B<br/>%e" }}</div><div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
