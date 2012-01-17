@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Latte Iconset For Developers
+title: Latté — Iconset For Developers
 ---
 
 I stumbled across this today and chuckled a little. These icons are very nice though, so click the preview image below to download them!
