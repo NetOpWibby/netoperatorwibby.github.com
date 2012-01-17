@@ -3,14 +3,14 @@
 /**************************************************************** BASE LAYOUT + TYPOGRAPHY ***/
 
 html {
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
 	padding: 10%;
 	background-color: #ffffff;
-  background-image: url("/images/bg.jpg");
+	background-image: url("/images/bg.jpg");
 	color: #191919;
 	font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 	font-size: 0.9em;
@@ -212,8 +212,7 @@ blockquote p {
 }
 
 ul.images {
-	/* display: inline; */
-  /* margin: 0 0 18px -30px; */
+
 }
 
 ul.images img {
