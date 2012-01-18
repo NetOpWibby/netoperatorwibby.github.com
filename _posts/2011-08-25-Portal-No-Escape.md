@@ -10,5 +10,5 @@ I find that there is a down side to videos like these...high-production values B
 Then again, that's just me whining.
 
 <div class="video-container">
-<iframe width="560" height="316" src="http://www.youtube.com/embed/4drucg1A6Xk" frameborder="0"></iframe>
+<iframe width="560" height="316" src="http://www.youtube.com/embed/4drucg1A6Xk"></iframe>
 </div>

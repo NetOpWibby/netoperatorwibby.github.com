@@ -16,5 +16,5 @@ I suppose I could use Super Robot Karate School as my repository for things lear
 This post is getting pretty long, and I feel like tweaking some more stuff. I shall end on a friggin' awesome note:
 
 <div class="video-container">
-<iframe width="560" height="316" src="http://www.youtube.com/embed/1MfmjdbbasY" frameborder="0"></iframe>
+<iframe width="560" height="316" src="http://www.youtube.com/embed/1MfmjdbbasY"></iframe>
 </div>
