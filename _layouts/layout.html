@@ -24,7 +24,6 @@
 <meta name="author" content="Paul Anthony Webb"/>
 
 <link rel="stylesheet" href="/css/style.css"/>
-<link rel="stylesheet" href="/css/prettify.css"/>
 
 </head>
 
@@ -42,7 +41,7 @@
 <section>{{ content }}</section>
 
 <footer>
-<small class="footer-left">&copy; Copyright Paul Anthony Webb 2012 &#8212; infinity | See this site on <a href="https://github.com/NetOperatorWibby/srks.github.com">GitHub</a>!</small><small class="footer-right"><a href="#top"></a></small>
+<small class="footer-left">&copy; Copyright Paul Anthony Webb 2012 &#8212; infinity | See this site on <a href="http://github.com/NetOperatorWibby/netoperatorwibby.github.com">GitHub</a>!</small><small class="footer-right"><a href="#top"></a></small>
 </footer>
 
 </div>
@@ -64,6 +63,16 @@ $(function () {
 $('#top').click(function () {
 	$('body,html').animate({
 		scrollTop: 0},800);});});
+</script>
+
+<script>
+$(function() {
+	var $pre = $('pre');
+	$pre.html($pre.html().replace(/</g, '&lt;').replace(/ /g, '&nbsp;').replace(/>/g, '&gt;'));});
+</script>
+
+<script>
+$('a[href^="http://"]').not('a[href*=gusdecool]').attr('target','_blank');
 </script>
 
 <!-- ANALYTICS -->
