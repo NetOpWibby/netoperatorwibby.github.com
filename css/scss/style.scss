@@ -2,6 +2,7 @@
 @import "reset";
 @import "prettify";
 @import "font-family";
+@import "color";
 
 /**************************************************************** BASE LAYOUT + TYPOGRAPHY ***/
 
@@ -11,13 +12,13 @@ html {
 }
 
 body {
-	padding: 10%;
-	background-color: #ffffff;
-	background-image: url("/images/bg.jpg");
-	color: #191919;
-	font-family: $hoefler;
-	font-size: 0.9em;
-	line-height: 1.3;
+  padding: 10%;
+  background-color: #ffffff;
+  background-image: url("/images/bg.jpg");
+  color: #191919;
+  font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 0.9em;
+  line-height: 1.3;
 }
 
 html, body {
@@ -26,7 +27,7 @@ html, body {
 }
 
 a {
-	color: #191919;
+	@include black;
 	text-decoration: none;
 }
 
