@@ -63,12 +63,9 @@ strong {
   font-style: italic;
 	letter-spacing: 2px;
   z-index: 2000000002;
-  box-shadow: 0 0 10px rgb(209, 209, 209);
-  -moz-box-shadow: 0 0 10px rgb(209, 209, 209);
-  -webkit-box-shadow: 0 0 10px rgb(209, 209, 209);
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  @include box-shadow(0 0 10px rgb(209, 209, 209));
+  /* @include box-shadow(0 0 10px hsla(0 0% 81.9608%, 1)); */
+  @include border-radius(5px);
 }
 
 .clear {
