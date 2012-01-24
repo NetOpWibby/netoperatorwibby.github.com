@@ -297,9 +297,13 @@ strong {
   font-style: italic;
   letter-spacing: 2px;
   z-index: 2000000002;
-  box-shadow: 0 0 10px #d1d1d1;
+  /* box-shadow: (0 0 10px rgb(209, 209, 209)); */
   /* @include box-shadow(0 0 10px rgb(209, 209, 209)); */
-  /* @include box-shadow(0 0 10px hsla(0 0% 81.9608%, 1)); */
+  -webkit-box-shadow: compact(0 0 10px #d1d1d1, false, false, false, false, false, false, false, false);
+  -moz-box-shadow: compact(0 0 10px #d1d1d1, false, false, false, false, false, false, false, false);
+  -ms-box-shadow: compact(0 0 10px #d1d1d1, false, false, false, false, false, false, false, false);
+  -o-box-shadow: compact(0 0 10px #d1d1d1, false, false, false, false, false, false, false, false);
+  box-shadow: compact(0 0 10px #d1d1d1, false, false, false, false, false, false, false, false);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
