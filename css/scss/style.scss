@@ -4,7 +4,8 @@
 @import "font-family";
 @import "color";
 
-/**************************************************************** BASE LAYOUT + TYPOGRAPHY ***/
+/***************************************************************** BASE LAYOUT + TYPOGRAPHY ***/
+/**********************************************************************************************/
 
 html {
   text-rendering: optimizeLegibility;
@@ -33,7 +34,7 @@ a {
 
 a:hover {
 	@include black;
-	border-bottom: 1px dotted #191919;
+	@include border-bottom;
 	opacity: 0.4;
 }
 
@@ -63,7 +64,8 @@ strong {
   font-style: italic;
 	letter-spacing: 2px;
   z-index: 2000000002;
-  @include box-shadow(0 0 10px rgb(209, 209, 209));
+  box-shadow: (0 0 10px rgb(209, 209, 209));
+  /* @include box-shadow(0 0 10px rgb(209, 209, 209)); */
   /* @include box-shadow(0 0 10px hsla(0 0% 81.9608%, 1)); */
   @include border-radius(5px);
 }
@@ -73,7 +75,8 @@ strong {
   height: 10px;
 }
 
-/**************************************************************** HEADER + FOOTER ***/
+/************************************************************************** HEADER + FOOTER ***/
+/**********************************************************************************************/
 
 header {
   margin: 0 0 50px 0;
@@ -103,7 +106,7 @@ small.footer-right {
 }
 
 small.footer-left a, small.footer-right a {
-	border-bottom: 1px dotted #191919;
+	@include border-bottom;
 }
 
 small.tagline, small.footer-left, small.footer-right {
@@ -111,7 +114,8 @@ small.tagline, small.footer-left, small.footer-right {
 	font-size: 10pt;
 }
 
-/**************************************************************** CONTENT STYLING ***/
+/************************************************************************** CONTENT STYLING ***/
+/**********************************************************************************************/
 
 #main-wrap {
 	max-width: 100%;
@@ -126,7 +130,8 @@ small.tagline, small.footer-left, small.footer-right {
 	line-height: 1.8;
 }
 
-/**************************************************************** BLOG POST LIST STYLING ***/
+/******************************************************************* BLOG POST LIST STYLING ***/
+/**********************************************************************************************/
 
 ul li {
 	clear: both;
@@ -150,6 +155,7 @@ ul li .post-title {
 }
 
 /**************************************************************** BLOG POST CONTENT STYLING ***/
+/**********************************************************************************************/
 
 p {
 	margin: 10px;
@@ -167,8 +173,7 @@ p {
 .video-container iframe, .video-container object, .video-container embed {
 	position: absolute;
 	top: 0; left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100%; height: 100%;
   clear: left;
 }
 
@@ -179,7 +184,7 @@ p {
 }
 
 #post a {
-	border-bottom: 1px dotted #191919;
+	@include border-bottom;
 }
 
 .h3-helper {
@@ -228,15 +233,13 @@ ul.images li {
 }
 
 #post ul.images li {
-  padding: 0px;
-  margin: 0px;
+  padding: 0px; margin: 0px;
 }
 
 ul.images a {
   box-shadow: inset 0 1px 15px 0 #bababa;
   background: #fefefe;
-  display: inline;
-  display: block;
+  display: inline-block;
   position: relative;
   float: left;
   margin: 0 0 27px 30px;
