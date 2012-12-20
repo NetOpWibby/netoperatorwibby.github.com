@@ -1,81 +1,100 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
+  <head>
 
-<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>{{ page.title }}</title>
 
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <!--/
 
-<title>{{ page.title }}</title>
+        ********                                      *******            **                 **  
+       **//////          ******                      /**////**          /**                /**  
+      /**        **   **/**///**  *****  ******      /**   /**   ****** /**       ******  ******
+      /*********/**  /**/**  /** **///**//**//*      /*******   **////**/******  **////**///**/ 
+      ////////**/**  /**/****** /******* /** /       /**///**  /**   /**/**///**/**   /**  /**  
+             /**/**  /**/**///  /**////  /**         /**  //** /**   /**/**  /**/**   /**  /**  
+       ******** //******/**     //******/***         /**   //**//****** /****** //******   //** 
+      ////////   ////// //       ////// ///          //     //  //////  /////    //////     //
 
-<!--
-  ********                                      *******            **                 **  
- **//////          ******                      /**////**          /**                /**  
-/**        **   **/**///**  *****  ******      /**   /**   ****** /**       ******  ******
-/*********/**  /**/**  /** **///**//**//*      /*******   **////**/******  **////**///**/ 
-////////**/**  /**/****** /******* /** /       /**///**  /**   /**/**///**/**   /**  /**  
-       /**/**  /**/**///  /**////  /**         /**  //** /**   /**/**  /**/**   /**  /**  
- ******** //******/**     //******/***         /**   //**//****** /****** //******   //** 
-////////   ////// //       ////// ///          //     //  //////  /////    //////     //
--->
+    /-->
 
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content="Super Robot Karate School"/>
-<meta name="author" content="Paul Anthony Webb"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Super Robot Karate School"/>
+    <meta name="author" content="Paul Anthony Webb"/>
 
-<link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
 
-</head>
+  </head>
 
-<!-- LET'S A GO! -->
+  <!--/ LET'S A GO! /-->
 
-<body id="content-wrapper" onload="prettyPrint()">
-<div id="top"><!--&#11014;-->Ascend</div>
+  <body id="content-wrapper" onload="prettyPrint()">
 
-<div id="main-wrap">
+    <div id="top"><!--/ &#11014; /-->Ascend</div>
 
-<header><h3><a href="/">Super Robot Karate School</a></h3><br/>
-<small class="tagline">&#9733; a collection of things learned and discovered, through the eyes of Paul Anthony Webb</small>
-</header>
+    <div id="main-wrap">
 
-<section>{{ content }}</section>
+      <header>
+        <h3><a href="/">Super Robot Karate School</a></h3><br/>
+        <small class="tagline">&#9733; a collection of things learned and discovered, through the eyes of Paul Anthony Webb</small>
+      </header>
 
-<footer>
-<small class="footer-left">&copy; Copyright Paul Anthony Webb 2012 &#8212; infinity | See this site on <a href="http://github.com/NetOperatorWibby/netoperatorwibby.github.com">GitHub</a>!</small><small class="footer-right"><a href="#top"></a></small>
-</footer>
+      <section>
+        {{ content }}
+      </section>
 
-</div>
+      <footer>
+        <small class="footer-left">
+          &copy; Copyright Paul Anthony Webb 2012 &#8212; infinity | See this site on <a href="http://github.com/NetOperatorWibby/netoperatorwibby.github.com">GitHub</a>!
+        </small>
 
-<!-- JAVASCRIPTS -->
+        <small class="footer-right">
+          <a href="#top"></a>
+        </small>
+      </footer>
 
-<script src="/javascript/jquery.min.js"></script>
-<script src="/javascript/osxfontrender.js"></script>
-<script src="/javascript/code/prettify.js"></script>
+    </div>
 
-<script>
-$(function () {
-	$(window).scroll(function () {
-	if ($(this).scrollTop() != 0) {
-		$('#top').fadeIn();
-	} else {
-		$('#top').fadeOut();
-	}});
-$('#top').click(function () {
-	$('body,html').animate({
-		scrollTop: 0},800);});});
-</script>
+    <!--/ JAVASCRIPTS /-->
 
-<script>
-$(function() {
-	var $pre = $('pre');
-	$pre.html($pre.html().replace(/</g, '&lt;').replace(/ /g, '&nbsp;').replace(/>/g, '&gt;'));});
-</script>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/osxfontrender.js"></script>
+    <script src="/javascript/code/prettify.js"></script>
 
-<script>$('a[href^="http://"]').not('a[href*=gusdecool]').attr('target','_blank');</script>
+    <script>
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+          $('#top').fadeIn();
+        }
 
-<!-- ANALYTICS -->
+        else {
+          $('#top').fadeOut();
+        }
+      });
 
-<script src="http://www.observerapp.com/record.js"></script>
-<script>try { Observerapp.record("4f16eecd30aa86427400a03b"); } catch(e) {};</script>
+      $('#top').click(function () {
+        $('body,html').animate({ scrollTop: 0 }, 800);
+      });
+    });
+    </script>
 
-</body></html>
+    <script>
+      $(function() {
+        var $pre = $('pre');
+
+        $pre.html($pre.html().replace(/</g, '&lt;').replace(/ /g, '&nbsp;').replace(/>/g, '&gt;'));
+      });
+    </script>
+
+    <script>$('a[href^="http://"]').not('a[href*=gusdecool]').attr('target','_blank');</script>
+
+    <!--/ ANALYTICS /-->
+
+    <script src="http://www.observerapp.com/record.js"></script>
+    <script>try { Observerapp.record("4f16eecd30aa86427400a03b"); } catch(e) {};</script>
+
+  </body>
+
+</html>
